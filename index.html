@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diretta — simulatore di dirette social</title>
+<meta name="description" content="Diretta simula una diretta sui social: spettatori, commenti, cuori e regali generati dall'app. Per divertirsi, fare uno scherzo o esercitarsi a parlare in video.">
+<link rel="icon" href="icona.png">
+<meta property="og:title" content="Diretta — simulatore di dirette social">
+<meta property="og:description" content="Spettatori, commenti e regali arrivano da soli. Tu devi solo parlare.">
+<meta property="og:image" content="icona.png">
+<style>
+  :root {
+    --ombra:#07080f; --notte:#0e1018; --filo:#242a38;
+    --luce:#eaf0fa; --soft:#9aa5b8; --debole:#6b7488;
+    --rosa:#ff2e88; --viola:#7b2ff7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin:0; background:var(--ombra); color:var(--luce);
+    font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .sfondo {
+    position:fixed; inset:0; z-index:-1; pointer-events:none;
+    background:
+      radial-gradient(52rem 32rem at 18% 12%, rgba(255,46,136,.16), transparent 62%),
+      radial-gradient(46rem 30rem at 82% 68%, rgba(123,47,247,.18), transparent 62%);
+  }
+  main { max-width:44rem; margin:0 auto; padding:5rem 1.4rem 4rem; }
+  .badge {
+    display:inline-flex; align-items:center; gap:.55rem;
+    padding:.42rem 1rem .46rem .8rem; border-radius:999px;
+    background:linear-gradient(100deg, var(--rosa), var(--viola));
+    font-weight:800; letter-spacing:.08em; font-size:.86rem; color:#fff;
+  }
+  .badge i { width:.62rem; height:.62rem; border-radius:50%; background:#fff; display:block; }
+  h1 { font-size:clamp(2.6rem,9vw,4rem); line-height:1; margin:1.6rem 0 .8rem; letter-spacing:-.03em; }
+  .occhiello { font-size:1.2rem; color:var(--soft); margin:0 0 3rem; max-width:32rem; }
+  h2 { font-size:1.05rem; letter-spacing:.1em; text-transform:uppercase;
+       color:var(--rosa); margin:3.5rem 0 1rem; }
+  ul { list-style:none; padding:0; margin:0; display:grid; gap:.9rem; }
+  li {
+    padding:1rem 1.15rem; border:1px solid var(--filo); border-radius:14px;
+    background:var(--notte);
+  }
+  li b { display:block; margin-bottom:.15rem; }
+  li span { color:var(--soft); font-size:.95rem; }
+  .avviso {
+    margin-top:3.5rem; padding:1.15rem 1.25rem;
+    border:1px solid var(--filo); border-left:3px solid var(--rosa);
+    border-radius:12px; color:var(--soft); font-size:.95rem;
+  }
+  footer { margin-top:3.5rem; padding-top:1.6rem; border-top:1px solid var(--filo);
+           color:var(--debole); font-size:.9rem; }
+  footer a { color:var(--rosa); }
+</style>
+</head>
+<body>
+<div class="sfondo"></div>
+<main>
+
+  <span class="badge"><i></i>LIVE</span>
+  <h1>Diretta</h1>
+  <p class="occhiello">Avvii la trasmissione e il pubblico arriva da solo.
+  Spettatori, commenti, cuori e regali: tutto generato dall'app.</p>
+
+  <h2>Cosa puoi regolare</h2>
+  <ul>
+    <li><b>Quante persone ti guardano</b><span>Dai 150 al milione, o il numero
+      esatto che vuoi tu.</span></li>
+    <li><b>Come arrivano</b><span>Curva naturale — pochi, poi l'ondata — oppure
+      a ritmo deciso da te.</span></li>
+    <li><b>I primi secondi</b><span>La sala parte vuota e si riempie piano, come
+      in una diretta vera.</span></li>
+    <li><b>Il tono dei commenti</b><span>Fan affezionati, gente gasata, gamer,
+      pignoli. Si mescolano.</span></li>
+    <li><b>L'aspetto</b><span>Tre stili di diretta, cinque sfondi, la tua
+      fotocamera o uno generato.</span></li>
+  </ul>
+
+  <div class="avviso">
+    Spettatori, commenti e regali sono simulati dall'applicazione. Non è un
+    servizio di streaming: niente viene trasmesso, niente viene salvato online e
+    non ci sono persone reali che ti guardano. Diretta non è affiliata,
+    associata né approvata da alcuna piattaforma di social media o di streaming.
+  </div>
+
+  <footer>
+    <p><a href="privacy.html">Informativa sulla privacy</a></p>
+  </footer>
+
+</main>
+</body>
+</html>
